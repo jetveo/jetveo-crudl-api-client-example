@@ -1,0 +1,112 @@
+.containerForm {
+  margin-top: 50px !important;
+  padding: 40px 20px 40px 20px;
+  width: 40%;
+  margin: 0 auto;
+  border: 1px solid #ececec;
+  background-color: #ececec;
+  border-radius: 15px;
+}
+
+.containerForm,
+h2 {
+  margin-bottom: 50px;
+}
+
+.containerForm .form-select {
+  background-image: none;
+}
+
+
+.App-libraryItem {
+  display: flex;
+  width: 100%;
+  height: 400px;
+  margin-bottom: 30px;
+  margin-top: 30px;
+  box-shadow: 0 0 10px silver;
+}
+
+.App-container {
+  margin: auto;
+  max-width: 1000px;
+  background-color: white;
+  padding: 0 20px 0 20px;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  margin-top: 20px;
+}
+
+.Picture {
+  height: 100%;
+  margin-bottom: 15px;
+  object-fit: contain;
+}
+
+.column-66 {
+  width: 66.66666%;
+  padding: 20px;
+  text-align: center;
+}
+
+
+.column-33 {
+  width: 33.33333%;
+  padding: 20px;
+}
+
+
+.pictureContainer {
+  height: 100%;
+}
+
+.pictureContainer .Picture {
+  height: 100%;
+}
+
+.articleDescription {
+  display: -webkit-box;
+  max-width: 300px;
+  -webkit-line-clamp: 13;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+@media only screen and (max-width: 1000px) {
+  .containerForm {
+    width: 75%;
+  }
+}
+
+@media only screen and (max-width: 750px) {
+
+  .column-66,
+  .column-33 {
+    width: 100%;
+    text-align: center;
+  }
+
+  .App-libraryItem {
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+  }
+
+  .articleDescription {
+
+    display: -webkit-box;
+    max-width: 600px;
+    -webkit-line-clamp: 5;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+
+}
+
+
+@media only screen and (max-width: 900px) {
+  .App-container {
+    margin: auto;
+    max-width: 800px;
+  }
+}
