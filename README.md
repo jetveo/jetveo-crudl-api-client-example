@@ -6,10 +6,10 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## The purpose of this project
+## Purpose of this Project
 
-Main purpose of this project is show how to developer can consume Jetveo CRUDL API in React app.
+This project shows how a developer can consume Jetveo CRUDL API in React app.
 
 ## Configuration
 
-You need to configure Jetveo API key and Jetveo app URL in .env file.
+The Jetveo API key and the Jetveo App URL must be included in an .env file.
