@@ -46,14 +46,22 @@ export class ApiClient {
 
     public static async sendTicket(data: TicketData): Promise<Result> {
         try {
-            await axios.post<ResponseBase>(config.apiUrl + '/ticket',
+            const response = await axios.post<ResponseBase>(config.apiUrl + '/ticket',
                 data,
                 {
                     headers: { 'jv-api-key': config.apiKey }
                 }
             );
 
-            return { error: undefined };
+            if (response.data?.success) {
+                return { error: undefined };
+            }
+
+            if (response.data?.message) {
+                return { error: response.data.message };
+            }
+
+            return { error: 'Action was not successfull' };
         }
         catch (error) {
             return { error: processRequestError(error) };
